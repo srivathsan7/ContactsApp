@@ -8,7 +8,7 @@ cd into the directory (go into the folder called ContactsApp which you have pull
 <h1>Prerequesites:</h1><br/>
 1.npm must be installed<br/>
 2.nodejs must be installed (https://nodejs.org/en/download/)<br/>
-3.mongodb should be installed<br/>
+3.mongodb should be installed and running on mongodb://localhost:27017/<br/>
 <br/>
 <h1>Run the following Commands:</h1><br/>
 1.npm install <br/>
