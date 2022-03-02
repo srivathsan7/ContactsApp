@@ -1,0 +1,33 @@
+{{>header}}
+{{#if isWrong}}
+      {{#each errors}}
+      <div class="alert" style="padding: 20px;background-color: #f44336;color: white;">   
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <strong>Retry!</strong> {{this.msg}} 
+      </div>   
+      {{/each}}
+{{/if}}
+<div class="container-fluid" style="background: linear-gradient(to right, #333333, #dd1818);">
+	<div class="center">
+		<h1>Add Contact</h1>
+		<form method="POST" action="add_contact_auth">
+			<label for="name" style="color:black;font-size:20px;font-family:monospace;font-weight:bold;">Contact Name</label>
+			<div class="inputbox">
+				<input type="text" placeholder="name" name="name" id="name" required>
+				</div>
+				<label for="mobileno" style="color:black;font-size:20px;font-family:monospace;font-weight:bold;">Contact Mobile Number</label>
+				<div class="inputbox">
+  				<input type="text" id="mobileno" name="mobileno" placeholder="Mobile Number" required>
+				</div>
+				<label for="email_id" style="color:black;font-size:20px;font-family:monospace;font-weight:bold;">Contact Email ID</label>
+				<div class="inputbox">
+  				<input type="text" id="email_id" name="email_id" placeholder="emailid" required>
+				</div>
+				<div class="inputbox">
+					<input type="submit" value="submit" style="background-color:cyan;">
+				</div>
+		</form>
+	</div>
+</div>
+</div>
+{{>footer}}

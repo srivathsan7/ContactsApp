@@ -1,0 +1,59 @@
+{{>header}}
+<div class= "grey lighten-1"style = "position: relative ; top:0px; border: 40px solid #eeeeee;height:700px;" >
+            <div class="carousel carousel-slider">
+                <a class="carousel-item" href="#one!"><img src="img/connect.jpg" style = "height:650px;"></a>
+                <a class="carousel-item" href="#two!"><img src="img/cloud.jpg" style = "height:650px;"></a>
+              </div>
+
+          </div>
+        
+          <div style="position: relative; top: 0px;">
+          <div class="row  " style=" margin: 0px 40px 0px 40px;border-top: 2px solid gainsboro; padding-top:30px; ">
+            <div class="col l5 s9 push-s1 container push-l2">
+                <img src="img/ph_lap.jpg" class="container">
+            </div>
+            <div class="col l4 s9 push-s1 row  push-l1 "  style="position: relative;">
+                <h3>Store All your Contacts</h3>
+                <p style = "font-size: 20px;">ContactsApp provides you with contact Storage!.
+                </p>
+                
+                <p style = "font-size: 20px;">All you got to do is update your contacts in the website and you can access the website anytime to retrieve them!.</p>
+            </div>
+          </div>
+        <br>
+        <br>
+        <br>
+        <div class="row  " style="position: relative; top:20px;  margin: 0px 40px 0px 40px;border-top: 2px solid gainsboro; padding-top:30px;">
+          <div class="col l4 s9 push-s1 row  push-l2 "  style="position: relative;">
+            <h3>Access Anywhere</h3>
+            <p style = "font-size: 20px;">Access your Contacts from anywhere PC,Mobile.
+            </p>
+            
+            <p style = "font-size: 20px;">Save the contacts of your beloved ones!</p>
+        </div>
+          <div class="col l5 s9 push-s1 container push-l2">
+              <img src="img/connect.jpg" class="container">
+          </div>
+          
+      </div>
+        <br>
+        <br>
+        <br>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+                <script>
+                $(document).ready(function(){
+
+                    $(document).ready(function(){
+            $('select').formSelect();
+          });
+                    $('.carousel.carousel-slider').carousel({
+                        duration: 200,
+    fullWidth: true,
+    indicators: true
+  });
+  $('.carousel').carousel();
+       
+                    }); 
+          </script>
+{{>footer}}
