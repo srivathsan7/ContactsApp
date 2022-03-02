@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FCSS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src	'self' 'unsafe-inline' *; img-src 'self' data: *">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/header.css">
+        <style>
+			.tabs .indicator{
+				background-color: #1a237e;
+				}
+			.tabs .tab a:focus, .tabs .tab a:focus.active{
+				background: transparent;
+				}
+		</style>
+    </head>
+    <body style="background-color: aqua;">
+        <header>
+            <nav class="nav-wrapper black">
+              <div class="container">
+                <a href="#" class="brand-logo"><img style = "position:relative; top:10px" src="https://img.icons8.com/fluent/48/000000/calendar.png"/>  FCSS</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                  <i class="material-icons" onclick="openNav" >menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                  <li><a href="home">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  {{#if isAdmin}}
+                  <li><a href="admin_dashboard">Dashboard</a></li>
+                  {{else}}
+                  <li><a href="faculty_dashboard">Dashboard</a></li>
+                  {{/if}}
+                  <li><a href="profile">{{username}}</a></li>
+                  <li><a href="logout">Logout</a></li>
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                  <li><a href="home">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  {{#if isAdmin}}
+                  <li><a href="admin_dashboard">Dashboard</a></li>
+                  {{else}}
+                  <li><a href="faculty_dashboard">Dashboard</a></li>
+                  {{/if}}
+                  <li><a href="profile">{{username}}</a></li>
+                  <li><a href="logout">Logout</a></li>
+                </ul>
+              </div>
+            </nav>
+          </header>

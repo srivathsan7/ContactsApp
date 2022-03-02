@@ -1,0 +1,38 @@
+{{>header}}
+<div class="limiter">
+
+		<div class="container-table100">
+			
+			<div class="wrap-table100">
+			<h1 style="margin-bottom:50px;text-align:center;">Your Contacts</h1>
+				<div class="table100">
+					<table>
+						<thead>
+							<tr class="table100-head">
+								<th class="column1">Contact Name</th>
+								<th class="column2">Contact Number</th>
+								<th class="column3">Email ID</th>
+							</tr>
+						</thead>
+						<tbody>
+							{{#each contacts}}
+							<tr><td class="column1">{{this.name}}</td>
+								<td class="column2">{{this.mobileno}}</td>
+								<td class="column3">{{this.email_id}}</td>							
+							</tr>
+							{{/each}}				
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	
+
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js"></script>
+{{>footer}}

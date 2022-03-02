@@ -1,0 +1,29 @@
+{{>header}}
+{{#if isWrong}}
+      {{#each errors}}
+      <div class="alert" style="padding: 20px;background-color: #f44336;color: white;">   
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <strong>Retry!</strong> {{this.msg}} 
+      </div>   
+      {{/each}}
+{{/if}}
+<div class="container-fluid" style="background: linear-gradient(to right, #5433ff, #20bdff, #a5fecb);">
+	<div class="center">
+		<h1>Sign In</h1>
+		<form method="POST" action="signin_auth">
+			<label for="username" style="color:black;font-size:20px;font-family:monospace;font-weight:bold;">Username</label>
+			<div class="inputbox">
+				<input type="text" placeholder="username" name="username" id="username" required>
+				</div>
+				<label for="password" style="color:black;font-size:20px;font-family:monospace;font-weight:bold;">Password</label>
+				<div class="inputbox">
+  				<input type="password" id="password" name="password" placeholder="password" required>
+				</div>
+				<div class="inputbox" >
+					<input type="submit" value="submit" style="background-color:cyan;">
+				</div>
+		</form>
+	</div>
+</div>
+</div>
+{{>footer}}
