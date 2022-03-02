@@ -4,7 +4,7 @@ Store and Retrieve your contacts from anywhere.Signup with your details.Store yo
 <br/>
 <br/>
 Procedure to run the Application:<br/>
-cd into the directory (go into the folder called ContactsApp which you have pulled from github).<br/><br/>
+cd into the directory (go into the folder called ContactsApp(or ContactsApp/ContactsApp-main if you are downloading zip) which you have pulled from github).<br/><br/>
 <h1>Prerequesites:</h1><br/>
 1.npm must be installed<br/>
 2.nodejs must be installed (https://nodejs.org/en/download/)<br/>
